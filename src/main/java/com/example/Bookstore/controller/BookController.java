@@ -100,10 +100,7 @@ public class BookController {
     @ApiResponse(responseCode = "500", description = "Created List of Books Internal Server Error")
     @Operation(summary = "Create List of Books")
     public ResponseEntity<?> addBooks(@Valid @RequestBody final List<BookDTO> booksDTO) {
-        final var createdBooks = bookService.addBooks(booksDTO);
-        return !createdBooks.isEmpty()
-                ? ResponseEntity.status(HttpStatus.CREATED).body(createdBooks)
-                : ResponseEntity.notFound().build();
+        return ResponseEntity.status(HttpStatus.CREATED).body(bookService.addBooks(booksDTO));
     }
 
     @PutMapping(value = "/books/{id}", consumes = "application/json", produces = "application/json")

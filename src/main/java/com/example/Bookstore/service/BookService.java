@@ -7,7 +7,6 @@ import com.example.Bookstore.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -39,18 +38,27 @@ public class BookService {
     }
 
     public Book addBook(final BookDTO bookDTO) {
-        return bookRepository.save(mapBookDTOToBook(bookDTO));
-    }
-
-    public List<Book> addBooks(final List<BookDTO> booksDTO) {
-        if (booksDTO != null) {
-            return bookRepository.saveAll(booksDTO.stream().map(this::mapBookDTOToBook).toList());
+        if (bookDTO != null) {
+            final var book = new Book();
+            book.setTitle(bookDTO.title());
+            book.setAuthor(bookDTO.author());
+            book.setPrice(bookDTO.price());
+            return bookRepository.save(book);
         }
         return null;
     }
 
-    public List<Book> addBooks(final BookDTO... booksDTO) {
-        return bookRepository.saveAll(Arrays.stream(booksDTO).map(this::mapBookDTOToBook).toList());
+    public List<Book> addBooks(final List<BookDTO> booksDTO) {
+        if (booksDTO != null) {
+            return bookRepository.saveAll(booksDTO.stream().map(bookDTO -> {
+                final var book = new Book();
+                book.setTitle(bookDTO.title());
+                book.setAuthor(bookDTO.author());
+                book.setPrice(bookDTO.price());
+                return book;
+            }).toList());
+        }
+        return null;
     }
 
     public Book updateBook(final Long id, final BookDTO bookDTO) {
@@ -62,15 +70,5 @@ public class BookService {
             return bookRepository.save(updatedBook);
         }
         return null;
-    }
-
-    private Book mapBookDTOToBook(final BookDTO bookDTO) {
-        return bookDTO != null
-                ? Book.builder()
-                .title(bookDTO.title())
-                .author(bookDTO.author())
-                .price(bookDTO.price())
-                .build()
-                : null;
     }
 }
