@@ -1,0 +1,636 @@
+2025-06-01 00:11:52,072 [INFO] com.example.Bookstore.BookstoreApplication [restartedMain] Starting BookstoreApplication using Java 24.0.1 with PID 17048 (C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore\target\classes started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01 00:11:52,074 [DEBUG] com.example.Bookstore.BookstoreApplication [restartedMain] Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01 00:11:52,074 [INFO] com.example.Bookstore.BookstoreApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-01 00:11:52,119 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01 00:11:52,119 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01 00:11:53,653 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01 00:11:53,736 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2025-06-01 00:11:54,077 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=7138b10e-8e35-38be-a219-842fec8ef2cc
+2025-06-01 00:11:55,038 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-01 00:11:55,058 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-06-01 00:11:55,058 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01 00:11:55,124 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-01 00:11:55,124 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3004 ms
+2025-06-01 00:11:55,784 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01 00:11:55,867 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01 00:11:55,921 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-01 00:11:56,253 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01 00:11:56,281 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-01 00:11:56,479 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bookdb user=ROOT
+2025-06-01 00:11:56,481 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-01 00:11:56,556 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-01 00:11:57,334 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01 00:11:57,362 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01 00:11:58,751 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint beneath base path '/actuator'
+2025-06-01 00:11:59,830 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bookdb'
+2025-06-01 00:11:59,906 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-01 00:12:00,112 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-06-01 00:12:00,131 [INFO] com.example.Bookstore.BookstoreApplication [restartedMain] Started BookstoreApplication in 8.616 seconds (process running for 9.434)
+2025-06-01 00:12:00,317 [INFO] com.example.Bookstore.config.SeedData [restartedMain] Books added: [Book(id=1, title=Harry Potter, author=J.K. Rowling, price=599.99), Book(id=2, title=Pirates of the Caribbean, author=Jonny Depp, price=299.99)]
+2025-06-01 00:15:07,563 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-01 00:15:07,571 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-06-01 00:15:07,579 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01 00:15:07,588 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-06-01 00:15:07,589 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-01 00:15:07,591 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-01T00:15:10.472+05:30  INFO 7944 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 24.0.1 with PID 7944 (C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore\target\classes started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T00:15:10.474+05:30 DEBUG 7944 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T00:15:10.474+05:30  INFO 7944 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T00:15:10.518+05:30  INFO 7944 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01T00:15:10.518+05:30  INFO 7944 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01T00:15:11.990+05:30  INFO 7944 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T00:15:12.074+05:30  INFO 7944 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2025-06-01T00:15:12.470+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7138b10e-8e35-38be-a219-842fec8ef2cc
+2025-06-01T00:15:13.729+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-01T00:15:13.754+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-01T00:15:13.755+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01T00:15:13.887+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-01T00:15:13.890+05:30  INFO 7944 --- [Bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3371 ms
+2025-06-01T00:15:14.493+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T00:15:14.587+05:30  INFO 7944 --- [Bookstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T00:15:14.644+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T00:15:15.014+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T00:15:15.047+05:30  INFO 7944 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T00:15:15.216+05:30  INFO 7944 --- [Bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bookdb user=ROOT
+2025-06-01T00:15:15.218+05:30  INFO 7944 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-01T00:15:15.280+05:30  INFO 7944 --- [Bookstore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-01T00:15:16.060+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T00:15:16.090+05:30  INFO 7944 --- [Bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T00:15:17.554+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-06-01T00:15:18.719+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bookdb'
+2025-06-01T00:15:18.806+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-01T00:15:18.983+05:30  INFO 7944 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-01T00:15:19.001+05:30  INFO 7944 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Started BookstoreApplication in 9.074 seconds (process running for 9.853)
+2025-06-01T00:15:19.151+05:30  INFO 7944 --- [Bookstore] [restartedMain] com.example.Bookstore.config.SeedData    : Books added: [Book(id=1, title=Harry Potter, author=J.K. Rowling, price=599.99), Book(id=2, title=Pirates of the Caribbean, author=Jonny Depp, price=299.99)]
+2025-06-01T00:15:32.777+05:30  INFO 7944 --- [Bookstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01T00:15:32.777+05:30  INFO 7944 --- [Bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-01T00:15:32.779+05:30  INFO 7944 --- [Bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-01T00:15:33.880+05:30  INFO 7944 --- [Bookstore] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 386 ms
+2025-06-01T00:15:49.511+05:30 DEBUG 7944 --- [Bookstore] [http-nio-8080-exec-1] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T00:15:49.511373300, status=400, error=Bad Request, message=Validation failed, path=/api/v1/books, validationErrors=[size must be between 10 and 30, must not be blank, size must be between 5 and 15]]
+2025-06-01T00:15:49.522+05:30  WARN 7944 --- [Bookstore] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.Bookstore.controller.BookController.addBook(com.example.Bookstore.payload.BookDTO) with 3 errors: [Field error in object 'bookDTO' on field 'title': rejected value []; codes [Size.bookDTO.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title],30,10]; default message [size must be between 10 and 30]] [Field error in object 'bookDTO' on field 'title': rejected value []; codes [NotBlank.bookDTO.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title]]; default message [must not be blank]] [Field error in object 'bookDTO' on field 'author': rejected value [J.K. Rowlingaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]; codes [Size.bookDTO.author,Size.author,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.author,author]; arguments []; default message [author],15,5]; default message [size must be between 5 and 15]] ]
+2025-06-01T00:23:02.829+05:30  INFO 7944 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-01T00:23:02.846+05:30  INFO 7944 --- [Bookstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-01T00:23:02.880+05:30  INFO 7944 --- [Bookstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T00:23:02.949+05:30  WARN 7944 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-06-01T00:23:02.950+05:30  INFO 7944 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-01T00:23:02.956+05:30  INFO 7944 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-01T00:23:07.455+05:30  INFO 3124 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 24.0.1 with PID 3124 (C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore\target\classes started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T00:23:07.457+05:30 DEBUG 3124 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T00:23:07.457+05:30  INFO 3124 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T00:23:07.525+05:30  INFO 3124 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01T00:23:07.526+05:30  INFO 3124 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01T00:23:09.438+05:30  INFO 3124 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T00:23:09.507+05:30  INFO 3124 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-06-01T00:23:09.823+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7138b10e-8e35-38be-a219-842fec8ef2cc
+2025-06-01T00:23:11.074+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-01T00:23:11.094+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-01T00:23:11.095+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01T00:23:11.165+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-01T00:23:11.166+05:30  INFO 3124 --- [Bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3639 ms
+2025-06-01T00:23:11.962+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T00:23:12.064+05:30  INFO 3124 --- [Bookstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T00:23:12.133+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T00:23:12.588+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T00:23:12.618+05:30  INFO 3124 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T00:23:12.849+05:30  INFO 3124 --- [Bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bookdb user=ROOT
+2025-06-01T00:23:12.851+05:30  INFO 3124 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-01T00:23:12.960+05:30  INFO 3124 --- [Bookstore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-01T00:23:13.771+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T00:23:13.798+05:30  INFO 3124 --- [Bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T00:23:15.311+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-06-01T00:23:16.551+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bookdb'
+2025-06-01T00:23:16.657+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-01T00:23:16.834+05:30  INFO 3124 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-01T00:23:16.852+05:30  INFO 3124 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Started BookstoreApplication in 10.022 seconds (process running for 10.849)
+2025-06-01T00:23:17.017+05:30  INFO 3124 --- [Bookstore] [restartedMain] com.example.Bookstore.config.SeedData    : Books added: [Book(id=1, title=Harry Potter, author=J.K. Rowling, price=599.99), Book(id=2, title=Pirates of the Caribbean, author=Jonny Depp, price=299.99)]
+2025-06-01T00:23:23.169+05:30  INFO 3124 --- [Bookstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01T00:23:23.172+05:30  INFO 3124 --- [Bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-01T00:23:23.176+05:30  INFO 3124 --- [Bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-01T00:23:23.828+05:30  INFO 3124 --- [Bookstore] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 267 ms
+2025-06-01T00:23:42.560+05:30 DEBUG 3124 --- [Bookstore] [http-nio-8080-exec-10] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T00:23:42.560701100, status=400, error=Bad Request, message=Validation failed, path=/api/v1/books, validationErrors={author=size must be between 5 and 15, title=size must be between 10 and 30}]
+2025-06-01T00:23:42.569+05:30  WARN 3124 --- [Bookstore] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.Bookstore.controller.BookController.addBook(com.example.Bookstore.payload.BookDTO) with 3 errors: [Field error in object 'bookDTO' on field 'title': rejected value []; codes [NotBlank.bookDTO.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title]]; default message [must not be blank]] [Field error in object 'bookDTO' on field 'author': rejected value [J.K. Rowlingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg]; codes [Size.bookDTO.author,Size.author,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.author,author]; arguments []; default message [author],15,5]; default message [size must be between 5 and 15]] [Field error in object 'bookDTO' on field 'title': rejected value []; codes [Size.bookDTO.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title],30,10]; default message [size must be between 10 and 30]] ]
+2025-06-01T00:24:03.799+05:30 DEBUG 3124 --- [Bookstore] [http-nio-8080-exec-8] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T00:24:03.799520200, status=400, error=Bad Request, message=Validation failed, path=/api/v1/books, validationErrors={author=size must be between 5 and 15, title=must not be blank}]
+2025-06-01T00:24:03.799+05:30  WARN 3124 --- [Bookstore] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.Bookstore.controller.BookController.addBook(com.example.Bookstore.payload.BookDTO) with 3 errors: [Field error in object 'bookDTO' on field 'title': rejected value []; codes [Size.bookDTO.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title],30,10]; default message [size must be between 10 and 30]] [Field error in object 'bookDTO' on field 'author': rejected value [J.K. Rowlingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg]; codes [Size.bookDTO.author,Size.author,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.author,author]; arguments []; default message [author],15,5]; default message [size must be between 5 and 15]] [Field error in object 'bookDTO' on field 'title': rejected value []; codes [NotBlank.bookDTO.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title]]; default message [must not be blank]] ]
+2025-06-01T00:29:22.517+05:30  INFO 3124 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-01T00:29:22.527+05:30  INFO 3124 --- [Bookstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-01T00:29:22.536+05:30  INFO 3124 --- [Bookstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T00:29:22.546+05:30  WARN 3124 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-06-01T00:29:22.547+05:30  INFO 3124 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-01T00:29:22.550+05:30  INFO 3124 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-01T00:29:26.924+05:30  INFO 15636 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 24.0.1 with PID 15636 (C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore\target\classes started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T00:29:26.926+05:30 DEBUG 15636 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T00:29:26.926+05:30  INFO 15636 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T00:29:26.972+05:30  INFO 15636 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01T00:29:26.973+05:30  INFO 15636 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01T00:29:28.434+05:30  INFO 15636 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T00:29:28.512+05:30  INFO 15636 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2025-06-01T00:29:28.900+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7138b10e-8e35-38be-a219-842fec8ef2cc
+2025-06-01T00:29:30.172+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-01T00:29:30.187+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-01T00:29:30.188+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01T00:29:30.253+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-01T00:29:30.253+05:30  INFO 15636 --- [Bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3280 ms
+2025-06-01T00:29:30.836+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T00:29:30.891+05:30  INFO 15636 --- [Bookstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T00:29:30.935+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T00:29:31.249+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T00:29:31.271+05:30  INFO 15636 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T00:29:31.413+05:30  INFO 15636 --- [Bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bookdb user=ROOT
+2025-06-01T00:29:31.415+05:30  INFO 15636 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-01T00:29:31.480+05:30  INFO 15636 --- [Bookstore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-01T00:29:32.125+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T00:29:32.149+05:30  INFO 15636 --- [Bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T00:29:33.617+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-06-01T00:29:34.888+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bookdb'
+2025-06-01T00:29:34.972+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-01T00:29:35.165+05:30  INFO 15636 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-01T00:29:35.186+05:30  INFO 15636 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Started BookstoreApplication in 8.794 seconds (process running for 9.537)
+2025-06-01T00:29:35.359+05:30  INFO 15636 --- [Bookstore] [restartedMain] com.example.Bookstore.config.SeedData    : Books added: [Book(id=1, title=Harry Potter, author=J.K. Rowling, price=599.99), Book(id=2, title=Pirates of the Caribbean, author=Jonny Depp, price=299.99)]
+2025-06-01T00:29:47.282+05:30  INFO 15636 --- [Bookstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01T00:29:47.283+05:30  INFO 15636 --- [Bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-01T00:29:47.284+05:30  INFO 15636 --- [Bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-01T00:29:48.436+05:30  INFO 15636 --- [Bookstore] [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 746 ms
+2025-06-01T00:30:07.565+05:30 DEBUG 15636 --- [Bookstore] [http-nio-8080-exec-7] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T00:30:07.565785, status=400, error=Bad Request, message=Validation failed, path=/api/v1/books, validationErrors=[title: size must be between 10 and 30, title: must not be blank, author: size must be between 5 and 15]]
+2025-06-01T00:30:07.577+05:30  WARN 15636 --- [Bookstore] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.Bookstore.controller.BookController.addBook(com.example.Bookstore.payload.BookDTO) with 3 errors: [Field error in object 'bookDTO' on field 'title': rejected value []; codes [Size.bookDTO.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title],30,10]; default message [size must be between 10 and 30]] [Field error in object 'bookDTO' on field 'title': rejected value []; codes [NotBlank.bookDTO.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title]]; default message [must not be blank]] [Field error in object 'bookDTO' on field 'author': rejected value [J.K. Rowlingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg]; codes [Size.bookDTO.author,Size.author,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.author,author]; arguments []; default message [author],15,5]; default message [size must be between 5 and 15]] ]
+2025-06-01T00:30:21.529+05:30 DEBUG 15636 --- [Bookstore] [http-nio-8080-exec-8] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T00:30:21.529601, status=400, error=Bad Request, message=Validation failed, path=/api/v1/books, validationErrors=[author: size must be between 5 and 15, title: must not be blank, title: size must be between 10 and 30]]
+2025-06-01T00:30:21.535+05:30  WARN 15636 --- [Bookstore] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.Bookstore.controller.BookController.addBook(com.example.Bookstore.payload.BookDTO) with 3 errors: [Field error in object 'bookDTO' on field 'author': rejected value [J.K. Rowlingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg]; codes [Size.bookDTO.author,Size.author,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.author,author]; arguments []; default message [author],15,5]; default message [size must be between 5 and 15]] [Field error in object 'bookDTO' on field 'title': rejected value []; codes [NotBlank.bookDTO.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title]]; default message [must not be blank]] [Field error in object 'bookDTO' on field 'title': rejected value []; codes [Size.bookDTO.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title],30,10]; default message [size must be between 10 and 30]] ]
+2025-06-01T00:30:25.677+05:30 DEBUG 15636 --- [Bookstore] [http-nio-8080-exec-4] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T00:30:25.677882600, status=400, error=Bad Request, message=Validation failed, path=/api/v1/books, validationErrors=[title: must not be blank, title: size must be between 10 and 30, author: size must be between 5 and 15]]
+2025-06-01T00:30:25.679+05:30  WARN 15636 --- [Bookstore] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.Bookstore.controller.BookController.addBook(com.example.Bookstore.payload.BookDTO) with 3 errors: [Field error in object 'bookDTO' on field 'title': rejected value []; codes [NotBlank.bookDTO.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title]]; default message [must not be blank]] [Field error in object 'bookDTO' on field 'title': rejected value []; codes [Size.bookDTO.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.title,title]; arguments []; default message [title],30,10]; default message [size must be between 10 and 30]] [Field error in object 'bookDTO' on field 'author': rejected value [J.K. Rowlingggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg]; codes [Size.bookDTO.author,Size.author,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bookDTO.author,author]; arguments []; default message [author],15,5]; default message [size must be between 5 and 15]] ]
+2025-06-01T00:32:17.390+05:30  INFO 15636 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-01T00:32:17.397+05:30  INFO 15636 --- [Bookstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-01T00:32:17.405+05:30  INFO 15636 --- [Bookstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T00:32:17.418+05:30  WARN 15636 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-06-01T00:32:17.419+05:30  INFO 15636 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-01T00:32:17.422+05:30  INFO 15636 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-01T00:32:23.126+05:30  INFO 12060 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Starting BookstoreApplication using Java 24.0.1 with PID 12060 (C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore\target\classes started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T00:32:23.135+05:30 DEBUG 12060 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T00:32:23.143+05:30  INFO 12060 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T00:32:23.339+05:30  INFO 12060 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01T00:32:23.341+05:30  INFO 12060 --- [Bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01T00:32:27.203+05:30  INFO 12060 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T00:32:27.275+05:30  INFO 12060 --- [Bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-06-01T00:32:28.056+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7138b10e-8e35-38be-a219-842fec8ef2cc
+2025-06-01T00:32:29.855+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-01T00:32:29.873+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-01T00:32:29.873+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01T00:32:29.967+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-01T00:32:29.967+05:30  INFO 12060 --- [Bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6625 ms
+2025-06-01T00:32:31.075+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T00:32:31.186+05:30  INFO 12060 --- [Bookstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T00:32:31.250+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T00:32:31.804+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T00:32:31.870+05:30  INFO 12060 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T00:32:32.077+05:30  INFO 12060 --- [Bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bookdb user=ROOT
+2025-06-01T00:32:32.077+05:30  INFO 12060 --- [Bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-01T00:32:32.144+05:30  INFO 12060 --- [Bookstore] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-01T00:32:33.164+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T00:32:33.191+05:30  INFO 12060 --- [Bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T00:32:35.844+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-06-01T00:32:38.096+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bookdb'
+2025-06-01T00:32:38.210+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-01T00:32:38.408+05:30  INFO 12060 --- [Bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-01T00:32:38.439+05:30  INFO 12060 --- [Bookstore] [restartedMain] c.e.Bookstore.BookstoreApplication       : Started BookstoreApplication in 16.66 seconds (process running for 17.584)
+2025-06-01T00:32:38.763+05:30  INFO 12060 --- [Bookstore] [restartedMain] com.example.Bookstore.config.SeedData    : Books added: [Book(id=1, title=Harry Potter, author=J.K. Rowling, price=599.99), Book(id=2, title=Pirates of the Caribbean, author=Jonny Depp, price=299.99)]
+2025-06-01T00:43:09.136+05:30  WARN 12060 --- [Bookstore] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s749ms224µs900ns).
+2025-06-01T02:18:29.745+05:30  WARN 12060 --- [Bookstore] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h35m20s640ms1µs800ns).
+2025-06-01T02:19:57.931+05:30  INFO 12060 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-01T02:19:58.210+05:30  INFO 12060 --- [Bookstore] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-01T02:19:58.352+05:30  INFO 12060 --- [Bookstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T02:19:58.536+05:30  WARN 12060 --- [Bookstore] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-06-01T02:19:58.537+05:30  INFO 12060 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-01T02:19:58.560+05:30  INFO 12060 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-01T03:27:11.216+05:30  INFO 5708 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 5708 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T03:27:11.218+05:30 DEBUG 5708 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T03:27:11.219+05:30  INFO 5708 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:27:12.155+05:30  WARN 5708 --- [Bookstore] [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController': Unsatisfied dependency expressed through field 'bookService': No qualifying bean of type 'com.example.Bookstore.service.BookService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-06-01T03:27:12.183+05:30  INFO 5708 --- [Bookstore] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-01T03:27:12.224+05:30 ERROR 5708 --- [Bookstore] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field bookService in com.example.Bookstore.controller.BookController required a bean of type 'com.example.Bookstore.service.BookService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.Bookstore.service.BookService' in your configuration.
+
+2025-06-01T03:27:12.229+05:30  WARN 5708 --- [Bookstore] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.example.Bookstore.controller.BookControllerTest@7d88fa9c]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@23c7cb18 testClass = com.example.Bookstore.controller.BookControllerTest, locations = [], classes = [com.example.Bookstore.BookstoreApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@30fbc23 key = [org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientWebSecurityAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2c78d320, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@106cc338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@60df60da, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@4ae9cfc1, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@1c93f6e1, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@9e9059ee, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ffc3b5ca, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5a1de7fb, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@cd3c6255], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:155) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:111) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController': Unsatisfied dependency expressed through field 'bookService': No qualifying bean of type 'com.example.Bookstore.service.BookService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.0.jar:3.5.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.7.jar:6.2.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.7.jar:6.2.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1462) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.5.0.jar:3.5.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.0.jar:3.5.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.0.jar:3.5.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.7.jar:6.2.7]
+	... 78 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.Bookstore.service.BookService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2280) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1703) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 105 common frames omitted
+
+2025-06-01T03:27:12.271+05:30  WARN 5708 --- [Bookstore] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.example.Bookstore.controller.BookControllerTest@1a17dd6f]
+
+java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@23c7cb18 testClass = com.example.Bookstore.controller.BookControllerTest, locations = [], classes = [com.example.Bookstore.BookstoreApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@30fbc23 key = [org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientWebSecurityAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2c78d320, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@106cc338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@60df60da, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@4ae9cfc1, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@1c93f6e1, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@9e9059ee, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ffc3b5ca, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5a1de7fb, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@cd3c6255], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:155) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:111) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.7.jar:6.2.7]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) ~[junit-rt.jar:na]
+
+2025-06-01T03:32:30.081+05:30  INFO 16592 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 16592 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T03:32:30.083+05:30 DEBUG 16592 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T03:32:30.084+05:30  INFO 16592 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:32:32.706+05:30  INFO 16592 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T03:32:32.706+05:30  INFO 16592 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T03:32:32.707+05:30  INFO 16592 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T03:32:32.736+05:30  INFO 16592 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 3.175 seconds (process running for 4.765)
+2025-06-01T03:34:52.343+05:30  INFO 21000 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 21000 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T03:34:52.344+05:30 DEBUG 21000 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T03:34:52.345+05:30  INFO 21000 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:34:54.758+05:30  INFO 21000 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T03:34:54.759+05:30  INFO 21000 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T03:34:54.761+05:30  INFO 21000 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T03:34:54.797+05:30  INFO 21000 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 3.004 seconds (process running for 4.553)
+2025-06-01T03:34:54.989+05:30 DEBUG 21000 --- [Bookstore] [main] c.e.Bookstore.controller.BookController  : Exception: Book not found with id: 2
+2025-06-01T03:39:58.310+05:30  INFO 10796 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 10796 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T03:39:58.311+05:30 DEBUG 10796 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T03:39:58.312+05:30  INFO 10796 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:40:00.633+05:30  INFO 10796 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T03:40:00.633+05:30  INFO 10796 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T03:40:00.635+05:30  INFO 10796 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T03:40:00.664+05:30  INFO 10796 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.901 seconds (process running for 4.467)
+2025-06-01T03:40:00.812+05:30 DEBUG 10796 --- [Bookstore] [main] c.e.Bookstore.controller.BookController  : Exception: Book not found with id: 2
+2025-06-01T03:41:14.828+05:30  INFO 14092 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 14092 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T03:41:14.829+05:30 DEBUG 14092 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T03:41:14.831+05:30  INFO 14092 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:41:17.164+05:30  INFO 14092 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T03:41:17.165+05:30  INFO 14092 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T03:41:17.167+05:30  INFO 14092 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-06-01T03:41:17.199+05:30  INFO 14092 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.891 seconds (process running for 4.392)
+2025-06-01T03:41:17.368+05:30 DEBUG 14092 --- [Bookstore] [main] c.e.Bookstore.controller.BookController  : Exception: Book not found with id: 2
+2025-06-01T03:54:36.059+05:30  INFO 20968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 20968 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T03:54:36.061+05:30 DEBUG 20968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T03:54:36.061+05:30  INFO 20968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:54:38.700+05:30  INFO 20968 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T03:54:38.701+05:30  INFO 20968 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T03:54:38.705+05:30  INFO 20968 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-06-01T03:54:38.746+05:30  INFO 20968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 3.291 seconds (process running for 5.057)
+2025-06-01T03:54:38.946+05:30 DEBUG 20968 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T03:54:38.946707800, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T04:01:02.584+05:30  INFO 15276 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 15276 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T04:01:02.586+05:30 DEBUG 15276 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T04:01:02.587+05:30  INFO 15276 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T04:01:05.193+05:30  INFO 15276 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T04:01:05.194+05:30  INFO 15276 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T04:01:05.195+05:30  INFO 15276 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T04:01:05.228+05:30  INFO 15276 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 3.206 seconds (process running for 4.964)
+2025-06-01T04:01:05.504+05:30 DEBUG 15276 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T04:01:05.503699700, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T04:02:11.586+05:30  INFO 21580 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 21580 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T04:02:11.588+05:30 DEBUG 21580 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T04:02:11.588+05:30  INFO 21580 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T04:02:13.866+05:30  INFO 21580 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T04:02:13.868+05:30  INFO 21580 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T04:02:13.870+05:30  INFO 21580 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T04:02:13.899+05:30  INFO 21580 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.823 seconds (process running for 4.251)
+2025-06-01T04:02:14.211+05:30 DEBUG 21580 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T04:02:14.211206600, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T04:07:55.347+05:30  INFO 6424 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 6424 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T04:07:55.349+05:30 DEBUG 6424 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T04:07:55.349+05:30  INFO 6424 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T04:07:57.636+05:30  INFO 6424 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T04:07:57.636+05:30  INFO 6424 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T04:07:57.637+05:30  INFO 6424 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T04:07:57.663+05:30  INFO 6424 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.851 seconds (process running for 4.36)
+2025-06-01T04:07:57.998+05:30 DEBUG 6424 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T04:07:57.998794100, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T04:08:47.026+05:30  INFO 26808 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 26808 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T04:08:47.028+05:30 DEBUG 26808 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T04:08:47.029+05:30  INFO 26808 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T04:08:49.545+05:30  INFO 26808 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T04:08:49.545+05:30  INFO 26808 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T04:08:49.547+05:30  INFO 26808 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T04:08:49.577+05:30  INFO 26808 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 3.089 seconds (process running for 4.758)
+2025-06-01T04:08:49.875+05:30 DEBUG 26808 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T04:08:49.875228100, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T04:15:12.919+05:30  INFO 25872 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 25872 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T04:15:12.921+05:30 DEBUG 25872 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T04:15:12.921+05:30  INFO 25872 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T04:15:16.086+05:30  INFO 25872 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T04:15:16.087+05:30  INFO 25872 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T04:15:16.090+05:30  INFO 25872 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-06-01T04:15:16.126+05:30  INFO 25872 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 3.865 seconds (process running for 5.881)
+2025-06-01T04:15:16.530+05:30 DEBUG 25872 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T04:15:16.530030300, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T15:12:45.226+05:30  INFO 19964 --- [Bookstore] [main] c.e.Bookstore.BookstoreApplicationTests  : Starting BookstoreApplicationTests using Java 24.0.1 with PID 19964 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T15:12:45.228+05:30 DEBUG 19964 --- [Bookstore] [main] c.e.Bookstore.BookstoreApplicationTests  : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T15:12:45.228+05:30  INFO 19964 --- [Bookstore] [main] c.e.Bookstore.BookstoreApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T15:12:46.922+05:30  INFO 19964 --- [Bookstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T15:12:47.011+05:30  INFO 19964 --- [Bookstore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2025-06-01T15:12:47.443+05:30  INFO 19964 --- [Bookstore] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=08a43bef-4dd0-3138-a494-f8aa92d528f9
+2025-06-01T15:12:48.336+05:30  INFO 19964 --- [Bookstore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T15:12:48.417+05:30  INFO 19964 --- [Bookstore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T15:12:48.460+05:30  INFO 19964 --- [Bookstore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T15:12:48.847+05:30  INFO 19964 --- [Bookstore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T15:12:48.888+05:30  INFO 19964 --- [Bookstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T15:12:49.116+05:30  INFO 19964 --- [Bookstore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bookdb user=ROOT
+2025-06-01T15:12:49.118+05:30  INFO 19964 --- [Bookstore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-01T15:12:49.205+05:30  INFO 19964 --- [Bookstore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-01T15:12:49.887+05:30  INFO 19964 --- [Bookstore] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.Bookstore.model.Book (class must be instantiated by Interceptor)
+2025-06-01T15:12:50.070+05:30  INFO 19964 --- [Bookstore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T15:12:50.101+05:30  INFO 19964 --- [Bookstore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T15:12:51.686+05:30  INFO 19964 --- [Bookstore] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-06-01T15:12:53.236+05:30  INFO 19964 --- [Bookstore] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bookdb'
+2025-06-01T15:12:53.515+05:30  INFO 19964 --- [Bookstore] [main] c.e.Bookstore.BookstoreApplicationTests  : Started BookstoreApplicationTests in 8.775 seconds (process running for 10.907)
+2025-06-01T15:12:53.700+05:30  INFO 19964 --- [Bookstore] [main] com.example.Bookstore.config.SeedData    : Books added: [Book(id=1, title=Harry Potter, author=J.K. Rowling, price=599.99), Book(id=2, title=Pirates of the Caribbean, author=Jonny Depp, price=299.99)]
+2025-06-01T15:12:54.434+05:30  INFO 19964 --- [Bookstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T15:12:54.439+05:30  INFO 19964 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-01T15:12:54.441+05:30  INFO 19964 --- [Bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-01T15:14:15.026+05:30  INFO 10132 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 10132 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T15:14:15.028+05:30 DEBUG 10132 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T15:14:15.028+05:30  INFO 10132 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T15:14:17.464+05:30  INFO 10132 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T15:14:17.464+05:30  INFO 10132 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T15:14:17.466+05:30  INFO 10132 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-06-01T15:14:17.496+05:30  INFO 10132 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.991 seconds (process running for 4.552)
+2025-06-01T15:14:17.864+05:30 DEBUG 10132 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T15:14:17.864663900, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T16:44:52.072+05:30  INFO 17944 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 17944 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T16:44:52.075+05:30 DEBUG 17944 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T16:44:52.076+05:30  INFO 17944 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T16:44:54.422+05:30  INFO 17944 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T16:44:54.423+05:30  INFO 17944 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T16:44:54.424+05:30  INFO 17944 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T16:44:54.457+05:30  INFO 17944 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.933 seconds (process running for 4.677)
+2025-06-01T16:44:54.807+05:30 DEBUG 17944 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T16:44:54.807206200, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T16:49:21.964+05:30  INFO 9856 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 9856 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T16:49:21.965+05:30 DEBUG 9856 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T16:49:21.966+05:30  INFO 9856 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T16:49:24.327+05:30  INFO 9856 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T16:49:24.327+05:30  INFO 9856 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T16:49:24.328+05:30  INFO 9856 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T16:49:24.357+05:30  INFO 9856 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.891 seconds (process running for 4.29)
+2025-06-01T16:49:24.715+05:30 DEBUG 9856 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T16:49:24.715416300, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T16:52:59.115+05:30  INFO 5144 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 5144 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T16:52:59.117+05:30 DEBUG 5144 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T16:52:59.118+05:30  INFO 5144 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T16:53:01.309+05:30  INFO 5144 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T16:53:01.309+05:30  INFO 5144 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T16:53:01.310+05:30  INFO 5144 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T16:53:01.340+05:30  INFO 5144 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.726 seconds (process running for 4.17)
+2025-06-01T16:53:01.722+05:30 DEBUG 5144 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T16:53:01.722125800, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T16:56:43.992+05:30  INFO 17968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 17968 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T16:56:43.993+05:30 DEBUG 17968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T16:56:43.994+05:30  INFO 17968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T16:56:46.122+05:30  INFO 17968 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T16:56:46.123+05:30  INFO 17968 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T16:56:46.125+05:30  INFO 17968 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-06-01T16:56:46.169+05:30  INFO 17968 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.681 seconds (process running for 4.164)
+2025-06-01T16:56:46.515+05:30 DEBUG 17968 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T16:56:46.515426500, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T16:57:52.293+05:30  INFO 3844 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 3844 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T16:57:52.294+05:30 DEBUG 3844 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T16:57:52.294+05:30  INFO 3844 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T16:57:54.496+05:30  INFO 3844 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T16:57:54.496+05:30  INFO 3844 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T16:57:54.498+05:30  INFO 3844 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-06-01T16:57:54.528+05:30  INFO 3844 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.745 seconds (process running for 4.175)
+2025-06-01T16:57:54.849+05:30 DEBUG 3844 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T16:57:54.849924400, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T17:03:09.522+05:30  INFO 6136 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 6136 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T17:03:09.523+05:30 DEBUG 6136 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T17:03:09.524+05:30  INFO 6136 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T17:03:11.686+05:30  INFO 6136 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T17:03:11.687+05:30  INFO 6136 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T17:03:11.689+05:30  INFO 6136 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-06-01T17:03:11.725+05:30  INFO 6136 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 2.696 seconds (process running for 4.149)
+2025-06-01T17:03:12.093+05:30 DEBUG 6136 --- [Bookstore] [main] c.e.B.e.GlobalRestExceptionHandler       : Exception: ApiErrorDTO[timestamp=2025-06-01T17:03:12.093144600, status=404, error=Not Found, message=Book not found with id: 2, path=/api/v1/books/2, validationErrors=null]
+2025-06-01T23:11:25.047+05:30  INFO 2164 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Starting BookControllerTest using Java 24.0.1 with PID 2164 (started by Tushar Dutta in C:\Users\Tushar Dutta\OneDrive\Desktop\Spring Boot Revise\L10 - Bookstore chatgpt\Bookstore)
+2025-06-01T23:11:25.048+05:30 DEBUG 2164 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-01T23:11:25.049+05:30  INFO 2164 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T23:11:27.449+05:30  INFO 2164 --- [Bookstore] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-06-01T23:11:27.449+05:30  INFO 2164 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-06-01T23:11:27.451+05:30  INFO 2164 --- [Bookstore] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-06-01T23:11:27.487+05:30  INFO 2164 --- [Bookstore] [main] c.e.B.controller.BookControllerTest      : Started BookControllerTest in 3.077 seconds (process running for 4.863)
