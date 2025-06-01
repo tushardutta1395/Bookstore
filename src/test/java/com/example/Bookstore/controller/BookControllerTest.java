@@ -44,7 +44,7 @@ public class BookControllerTest {
         book.setPrice(new BigDecimal("50.0"));
         when(bookService.getBookById(1L)).thenReturn(book);
 
-        mockMvc.perform(get("/api/v1/books/1")
+        mockMvc.perform(get("/api/v1/books/{id}", 1L)
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.title").value("Refactoring"));
@@ -55,7 +55,7 @@ public class BookControllerTest {
     public void getBookById_whenNotFound_returns404() throws Exception {
         when(bookService.getBookById(2L)).thenThrow(new BookNotFoundException(2L));
 
-        mockMvc.perform(get("/api/v1/books/2")
+        mockMvc.perform(get("/api/v1/books/{id}", 2L)
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.message").value("Book not found with id: 2"));
@@ -142,7 +142,7 @@ public class BookControllerTest {
         when(bookService.getBookById(1L)).thenReturn(book);
         when(bookService.deleteBookById(1L)).thenReturn(book);
 
-        mockMvc.perform(delete("/api/v1/books/1")
+        mockMvc.perform(delete("/api/v1/books/{id}", 1L)
                         .with(csrf())
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -154,7 +154,7 @@ public class BookControllerTest {
     public void deleteBookById_whenNotFound_returns404() throws Exception {
         when(bookService.deleteBookById(2L)).thenThrow(new BookNotFoundException(2L));
 
-        mockMvc.perform(delete("/api/v1/books/2")
+        mockMvc.perform(delete("/api/v1/books/{id}", 2L)
                         .with(csrf())
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound())
@@ -233,7 +233,7 @@ public class BookControllerTest {
         when(bookService.getBookById(1L)).thenReturn(storedBook);
         when(bookService.updateBook(1L, bookDTO)).thenReturn(updatedStoredBook);
 
-        mockMvc.perform(put("/api/v1/books/1")
+        mockMvc.perform(put("/api/v1/books/{id}", 1L)
                         .with(csrf())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(new ObjectMapper().writeValueAsString(bookDTO)))
@@ -250,7 +250,7 @@ public class BookControllerTest {
         when(bookService.getBookById(2L)).thenThrow(new BookNotFoundException(2L));
         when(bookService.updateBook(2L, bookDTO)).thenThrow(new BookNotFoundException(2L));
 
-        mockMvc.perform(put("/api/v1/books/2")
+        mockMvc.perform(put("/api/v1/books/{id}", 2L)
                         .with(csrf())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(new ObjectMapper().writeValueAsString(bookDTO)))

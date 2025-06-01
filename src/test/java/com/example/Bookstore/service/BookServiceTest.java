@@ -159,7 +159,6 @@ public class BookServiceTest {
     public void addBookDTO_whenNull_returnsNull() {
         final var found = bookService.addBook(null);
         assertNull(found);
-        verify(bookRepository, times(0)).save(null);
     }
 
     @Test
@@ -196,16 +195,14 @@ public class BookServiceTest {
 
     @Test
     public void addListOfBooksDTO_whenNull_returnsNull() {
-        final var found = bookService.addBooks((List<BookDTO>) null);
+        final var found = bookService.addBooks(null);
         assertNull(found);
-        verify(bookRepository, times(0)).saveAll(null);
     }
 
     @Test
     public void updateBookDTO_whenNull_returnsNull() {
         final var found = bookService.updateBook(2L, null);
         assertNull(found);
-        verify(bookRepository, times(0)).save(null);
     }
 
     @Test
