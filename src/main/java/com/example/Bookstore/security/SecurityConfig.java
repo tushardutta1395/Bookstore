@@ -25,6 +25,7 @@ public class SecurityConfig {
                         .requestMatchers("/h2-console/**").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll()
                         .requestMatchers("/v3/api-docs/**").permitAll()
+                        .requestMatchers("/actuator/health", "/actuator/info", "/actuator/metrics/**", "/actuator/loggers/**", "/api/recommend/healthcheck").permitAll()
                 )
                 .build()
                 : null;
